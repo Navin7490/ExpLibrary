@@ -7,11 +7,12 @@ import kotlin.math.roundToInt
 class Constans {
 
     companion object{
-        fun getIntFromDp(value: String, context: Context): Int {
+        fun getIntFromDp(value: Float, context: Context): Int {
             return TypedValue.applyDimension(
                 TypedValue.COMPLEX_UNIT_DIP,
-                value.toFloat(),
+                value,
                 context.resources.displayMetrics
+
             ).roundToInt()
         }
     }

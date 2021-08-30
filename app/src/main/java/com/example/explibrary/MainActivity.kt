@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
        val textView= findViewById<ConstraintLayout>(R.id.containerView)
 
-        textView?.background=BottomEdge.setBottomEdge(this,R.color.design_default_color_background)
+        textView?.background=BottomEdge.setTopEdge(this,R.color.purple_700,100f)
 
     }
 }
